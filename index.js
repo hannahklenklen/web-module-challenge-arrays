@@ -123,9 +123,10 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(pUno, pDos){
+    return pUno[pDos];
 }
+getFlavorByIndex(originalFlavors, 2);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -142,9 +143,11 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(p1, p2){
+    p1.splice(29,1);
+    return p1;
 }
+removeFlavorByName(originalFlavors, "Rocky Road");
 
 
 
@@ -167,9 +170,14 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(parameter1, parameter2){
+    for(let i=0; i<parameter1[parameter1.length-1]; i++){
+        if(originalFlavors[i].includes(parameter2)){
+            return filteredArray;
+        }
+    }
 }
+filterByWord(originalFlavors, "Chocolate");
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
