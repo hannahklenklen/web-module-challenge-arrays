@@ -171,11 +171,9 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(parameter1, parameter2){
-    for(let i=0; i<parameter1[parameter1.length-1]; i++){
-        if(originalFlavors[i].includes(parameter2)){
-            return filteredArray;
-        }
-    }
+    let filteredArray = [parameter1.includes(parameter2)];
+    console.log(filteredArray);
+    return filteredArray;
 }
 filterByWord(originalFlavors, "Chocolate");
 
