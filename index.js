@@ -45,11 +45,11 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(){
-    let copyFlavors = [...originalFlavors];
+function copy(one){
+    let copyFlavors = [...one];
     return copyFlavors;
 }  
-copy();   
+copy(originalFlavors);   
 
 
 
@@ -171,9 +171,7 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(parameter1, parameter2){
-    let filteredArray = [parameter1.includes(parameter2)];
-    console.log(filteredArray);
-    return filteredArray;
+    
 }
 filterByWord(originalFlavors, "Chocolate");
 
